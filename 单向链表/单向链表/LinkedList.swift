@@ -69,17 +69,13 @@ class LinkedList<T: Comparable> {
             fatalError("Index:\(index), Size:\(size)")
         }
         
-        if size == 0 {
-            first = Node(element, nil)
+        if index == 0 {
+            let newNode = Node(element, first)
+            first = newNode
         } else {
-            if index == 0 {
-                let newNode = Node(element, first)
-                first = newNode
-            } else {
-                let preNode = node(index - 1)
-                let newNode = Node(element, preNode?.next)
-                preNode?.next = newNode
-            }
+            let preNode = node(index - 1)
+            let newNode = Node(element, preNode?.next)
+            preNode?.next = newNode
         }
         
         size += 1
@@ -93,17 +89,12 @@ class LinkedList<T: Comparable> {
         }
         
         var delElement: T?
-        if first?.next == nil {
-            delElement = first?.element
-            first = nil
+        if index == 0 {
+            first = first?.next
         } else {
-            if index == 0 {
-                first = first?.next
-            } else {
-                let preNode = node(index-1)
-                delElement = preNode?.next?.element
-                preNode?.next = preNode?.next?.next
-            }
+            let preNode = node(index-1)
+            delElement = preNode?.next?.element
+            preNode?.next = preNode?.next?.next
         }
         
         size -= 1
