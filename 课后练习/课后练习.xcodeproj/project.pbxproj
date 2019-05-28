@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B08908B7229BE6050012E6A2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08908B6229BE6050012E6A2 /* main.swift */; };
 		B08908BE229BE64F0012E6A2 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08908BD229BE64F0012E6A2 /* LinkedList.swift */; };
+		B08908C0229CE4270012E6A2 /* _206._反转链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08908BF229CE4270012E6A2 /* _206._反转链表.swift */; };
+		B08908C2229CE47B0012E6A2 /* _141_环形链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08908C1229CE47B0012E6A2 /* _141_环形链表.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +29,8 @@
 		B08908B3229BE6050012E6A2 /* 课后练习 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "课后练习"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08908B6229BE6050012E6A2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B08908BD229BE64F0012E6A2 /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		B08908BF229CE4270012E6A2 /* _206._反转链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_206._反转链表.swift"; sourceTree = "<group>"; };
+		B08908C1229CE47B0012E6A2 /* _141_环形链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_141_环形链表.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				B08908BD229BE64F0012E6A2 /* LinkedList.swift */,
+				B08908BF229CE4270012E6A2 /* _206._反转链表.swift */,
+				B08908C1229CE47B0012E6A2 /* _141_环形链表.swift */,
 				B08908B6229BE6050012E6A2 /* main.swift */,
 			);
 			path = "课后练习";
@@ -123,7 +129,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B08908BE229BE64F0012E6A2 /* LinkedList.swift in Sources */,
+				B08908C2229CE47B0012E6A2 /* _141_环形链表.swift in Sources */,
 				B08908B7229BE6050012E6A2 /* main.swift in Sources */,
+				B08908C0229CE4270012E6A2 /* _206._反转链表.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

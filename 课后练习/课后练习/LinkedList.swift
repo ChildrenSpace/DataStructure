@@ -9,19 +9,20 @@
 import Foundation
 
 let ELEMENT_NOT_FOUND: Int = -1;
+
+public class Node<T: Comparable> {
+    var element: T?
+    var next: Node<T>?
+    
+    init(_ element: T, _ next: Node<T>?) {
+        self.element = element;
+        self.next = next;
+    }
+}
+
 class LinkedList<T: Comparable> {
     var size: Int = 0
     var first: Node<T>?
-    
-    class Node<T> {
-        var element: T?
-        var next: Node<T>?
-        
-        init(_ element: T, _ next: Node<T>?) {
-            self.element = element;
-            self.next = next;
-        }
-    }
     
     /// 元素的个数
     public func sizeOfElement() -> Int {

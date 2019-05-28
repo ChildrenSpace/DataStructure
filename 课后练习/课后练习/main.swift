@@ -5,22 +5,25 @@
 //  Created by XNIOS on 2019/5/27.
 //  Copyright © 2019 dylan. All rights reserved.
 
-//  206. 反转链表
-//  https://leetcode-cn.com/problems/reverse-linked-list/
-
 import Foundation
 
-public class ListNode {
-    public var val: Int
-    public var next: ListNode?
-    public init(_ val: Int) {
-        self.val = val
-        self.next = nil
-    }
+
+var list = LinkedList<Int>()
+list.add(1)
+list.add(2)
+list.add(3)
+list.add(4)
+list.add(5)
+list.add(6)
+
+for index in 0..<list.size {
+    print(list.get(index) as Any)
 }
 
-class Solution {
-    func reverseList(_ head: ListNode?) -> ListNode? {
-        return nil;
-    }
+print("==============")
+
+var node = Solution().reverseList(list.first)
+while node != nil {
+    print(node?.element as Any)
+    node = node?.next
 }
