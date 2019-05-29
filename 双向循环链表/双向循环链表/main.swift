@@ -50,3 +50,6 @@ while fast != nil && fast?.next != nil {
         break
     }
 }
+
+list.clear()
+
