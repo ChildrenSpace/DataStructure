@@ -11,8 +11,35 @@
 
 import Foundation
 
+public class ListNode {
+    public var val: Int
+    public var next: ListNode?
+    public init(_ val: Int) {
+        self.val = val
+        self.next = nil
+    }
+}
+
 class SolutionRemove {
-    func removeElements(_ head: Node<Int>?, _ val: Int) -> Node<Int>? {
-        return nil
+    func removeElements(_ head: ListNode?, _ val: Int) -> ListNode? {
+        var prev: ListNode? = nil
+        var node = head
+        
+        while node != nil {
+            if node?.val == val {
+                if node?.next != nil {
+                    node?.val = (node?.next!.val)!
+                    node?.next = node?.next?.next
+                } else {
+                    prev?.next = nil
+                    node = nil
+                }
+            } else {
+                prev = node
+                node = node?.next
+            }
+        }
+        
+        return (prev != nil) ? head : prev
     }
 }

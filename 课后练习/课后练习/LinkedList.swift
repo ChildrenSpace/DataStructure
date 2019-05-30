@@ -11,6 +11,7 @@ import Foundation
 let ELEMENT_NOT_FOUND: Int = -1;
 
 public class Node<T: Comparable> {
+    
     var element: T?
     var next: Node<T>?
     
